@@ -1,0 +1,337 @@
+body{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Arial', sans-serif;
+    background-image: linear-gradient(to left top,#97e9ff,#b6e6ff,#d0e4fb,#e0e4f1, #e7e7e7);
+}
+nav{
+    background-image: linear-gradient(45deg,#0a0c1a 20%,rgb(12, 17, 23) 30%,rgb(107, 12, 139) 55%,#1b6099 100%);
+    color: white;
+    width: 100%;
+    position:sticky;
+    top: 0px;
+    z-index: 1;
+    position: relative;
+}
+nav img{
+    position: relative;
+    left: 10px;
+    width: 90px;
+    height: 100px;
+}
+nav big{
+    position: relative;
+    left: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    top: 7px;
+}
+nav a{
+    position: relative;
+    padding: 15px;
+    left: 620px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+nav #h:hover,#a:hover,#c:hover,#l:hover,#s:hover{
+    color: #ebc68e;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    text-decoration: none;
+}
+main{
+    position: relative;
+    top: 5px;
+    width: 1100px;
+    height: 600px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    background-image: url(/Web_project/background1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+#mainbg{
+    width:700px ;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 72px;
+    width: 800px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    background-color: none;
+    background: rgba(0, 0, 0, 0.3);
+}
+.con input{
+    width: 600px;
+    height: 35px;
+    border-radius: 10px;
+    border: 3px solid rgb(94, 94, 92);
+    background-color: rgb(215, 235, 241);
+    color: black;
+    padding-left:10px;
+}
+.con input:hover{
+    border-color: black;
+    transform:scale(1.01);
+}
+.con button{
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    border-radius: 5px;
+    border-color: whitesmoke;
+}
+.con button:hover {
+    background-color: #494848;
+    transform: scale(1.1);
+}
+.result{
+    position: relative;
+    top: 10px;
+    text-shadow: 2px 2px 3px black;
+}
+.box{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/Web_project/welcomeBG1.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.box h1{
+    font-family: 'Renner_400Book';
+    font-weight: 600;
+    font-size:2.8rem;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 2px black;
+    -webkit-text-fill-color: #ffffff;
+}
+.col-12 h2{
+    position: relative;
+    top: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.social a {
+font-size: 4.5em;
+padding: 3rem;
+position: relative;
+top: 50px;
+z-index: 2;
+}
+.fa-facebook {
+color: #3b5998;
+}
+.fa-twitter {
+color: #00aced;
+}
+.fa-google {
+color: #dd4b39;
+}
+.fa-instagram {
+color: #a8517d;
+}
+.fa-youtube {
+color: #bb0000;
+}
+.fa-facebook:hover ,.fa-twitter:hover ,.fa-google:hover ,.fa-instagram:hover ,.fa-youtube:hover {
+transform:scale(1.2);
+}
+footer {
+    width: 100%;
+background-color: #261c43;
+color: #d5d5d5;
+padding: 2rem;
+}
+hr.light {
+border-top: 1px solid #d5d5d5;
+width: 75%;
+margin-top: .8rem;
+margin-bottom: 1rem;
+margin-left: 70px;
+}
+footer a {
+color: #d5d5d5;
+}
+hr.light-100 {
+border-top: 1px solid #d5d5d5;
+width: 100%;
+margin-top: .8rem;
+margin-bottom: 1rem;
+}
+.padding
+{
+padding-bottom: 2rem;
+}
+.footer-logo
+{
+width: 150px;
+}
+@media (max-width: 992px) {
+.social a {
+font-size: 4em;
+padding: 2rem;
+}
+}
+
+@media (max-width: 576px) {
+.light{
+position: relative;
+left: -20px;
+}
+.mpad{
+padding-left: 10px;
+}
+}
+/* Style for the About content */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    line-height: 1.6;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-content h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-content li {
+    margin-bottom: 8px;
+}
+
+/* Style for the contact content */
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+    line-height: 1.6;
+}
+.contact h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+.contact h3 {
+    font-size: 1.8em;
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.contact p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.contact-form #name,
+.contact-form #email,
+.contact-form #message {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form #message {
+    height: 100px;
+}
+
+.contact-form #submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form #submit:hover {
+    background-color: #494848;
+}
+
+.contact-info {
+    border-top: 2px solid #9c9c9c;
+    padding-top: 20px;
+}
+.contact-info h3 {
+    margin-top: 0;
+}
+.contact-info p {
+    margin-bottom: 8px;
+}
+
+#loading {
+    width: 2rem;
+    height: 2rem;
+    border: 5px solid #f3f3f3;
+    border-top: 6px solid #9c41f2;
+    border-radius: 100%;
+    margin: auto;
+    visibility: hidden;
+    animation: spin 1s infinite linear;
+}
+#loading.display {
+    visibility: visible;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

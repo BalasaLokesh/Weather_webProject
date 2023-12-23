@@ -1,0 +1,236 @@
+body{
+  margin: 0;
+  padding: 0;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to left top,#97e9ff,#b6e6ff,#d0e4fb,#e0e4f1, #e7e7e7);
+}
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+  }
+  nav{
+    background-image: linear-gradient(45deg,#0a0c1a 20%,rgb(12, 17, 23) 30%,rgb(107, 12, 139) 55%,#1b6099 100%);
+    color: white;
+    width: 100%;
+    position:sticky;
+    top: 0px;
+    z-index: 1;
+    position: relative;
+    height: 101px;
+}
+nav img{
+    position: relative;
+    left: 10px;
+    top: 1px;
+    width: 90px;
+    height: 100px;
+}
+nav big{
+    position: relative;
+    left: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    top: 7px;
+}
+nav a{
+    position: relative;
+    padding: 15px;
+    left: 620px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+nav #h:hover,#a:hover,#c:hover,#l:hover,#s:hover{
+    color: #ebc68e;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    text-decoration: none;
+}
+  .container {
+    position: relative;
+    top: 10px;
+    width: 800px !important;
+    height: 100%;
+    background-image: linear-gradient(to right,rgb(221, 38, 139) 20%, rgb(255, 0, 179) 40%,rgb(136, 0, 255) 80%, rgb(0, 30, 255) 100%);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .container .bG{
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black  !important;
+    width: 500px;
+    height: 100%;
+  }
+  .header {
+    letter-spacing: 10px;
+    border-radius: 10px;
+    color: white;
+    width: 500px;
+    padding: 1px;
+    text-align: center;
+    
+  }
+  .field {
+    position: relative;
+    padding: 5px;
+  }
+  .field label {
+    display: block;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .field input {
+    width: 400px;
+    height: 40px;
+    display: block;
+    border-radius: 20px;
+    border: 2px solid rgb(164, 130, 238);
+    background-color: black;
+    color: white;
+    margin-bottom: -10px;
+    
+
+  }
+  .field input::placeholder{
+    text-align: center;
+  }
+  .field span {
+    position: absolute;
+    top: 35px;
+    left: 400px;
+    visibility: hidden;
+  }
+  .field small {
+    visibility: hidden;
+  }
+  .field.error small {
+    visibility: visible;
+    color: red;
+  }
+  .field.error input {
+    border: 3px solid red;
+  }
+  .field.error .error1 {
+    visibility: visible;
+    color: red;
+  }
+  .field.success input {
+    border: 3px solid green;
+  }
+  .field.success .success1 {
+    visibility: visible;
+    color: green;
+  }
+  button{
+    border: 2px solid red;
+    background-color: black;
+    color:darkgoldenrod;
+    padding: 7px;
+    border-radius: 20px !important;
+    font-size: medium;
+    font-weight: 700;
+    letter-spacing: 7px;
+    font-size: large;
+    position: relative;
+    left: 20px;
+    border-radius: 20px;
+    width: 160px;
+    cursor: pointer;
+  }
+
+.col-12 h2{
+  position: relative;
+  top: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.social a {
+font-size: 4.5em;
+padding: 3rem;
+position: relative;
+top: 50px;
+z-index: 2;
+}
+.fa-facebook {
+color: #3b5998;
+}
+.fa-twitter {
+color: #00aced;
+}
+.fa-google {
+color: #dd4b39;
+}
+.fa-instagram {
+color: #a8517d;
+}
+.fa-youtube {
+color: #bb0000;
+}
+.fa-facebook:hover ,.fa-twitter:hover ,.fa-google:hover ,.fa-instagram:hover ,.fa-youtube:hover {
+transform:scale(1.2);
+}
+footer {
+width: 100%;
+background-color: #261c43;
+color: #d5d5d5;
+padding: 2rem;
+}
+hr.light {
+border-top: 1px solid #d5d5d5;
+width: 75%;
+margin-top: .8rem;
+margin-bottom: 1rem;
+margin-left: 70px;
+}
+.col-md-6 p{
+ font-size: 18px;
+}
+footer a {
+color: #d5d5d5;
+}
+hr.light-100 {
+border-top: 1px solid #d5d5d5;
+width: 100%;
+margin-top: .8rem;
+margin-bottom: 1rem;
+}
+.padding
+{
+padding-bottom: 2rem;
+}
+.footer-logo
+{
+width: 150px;
+}
+@media (max-width: 992px) {
+.social a {
+font-size: 4em;
+padding: 2rem;
+}
+}
+
+@media (max-width: 576px) {
+.light{
+position: relative;
+left: -20px;
+}
+.mpad{
+padding-left: 10px;
+}
+}

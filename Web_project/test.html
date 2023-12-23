@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Page</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+    /* Reset and Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  background-image: url(/Web_project/background1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ... (Previous CSS remains the same) */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.weather-logo {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#weatherDetails {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+</style>
+</head>
+<body>
+    <!-- Add IDs to your sections -->
+<div id="home"> <!-- Content for Home Page --> </div>
+<div id="about"> <!-- Content for About Page --> </div>
+<div id="contact"> <!-- Content for Contact Page --> </div>
+
+<!-- Update your navigation links -->
+<nav>
+    <!-- Add onclick events to your navigation links -->
+    <a href="#" onclick="navigateTo('home')">Home</a>
+    <a href="#" onclick="navigateTo('about')">About</a>
+    <a href="#" onclick="navigateTo('contact')">Contact</a>
+    <!-- ...other links -->
+</nav>
+    <main>
+      <div class="weather-container">
+        <input type="text" id="cityInput" placeholder="Enter City">
+        <button onclick="getWeather()">Get Weather</button>
+        <p id="weatherDetails"></p>
+      </div>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </main>
+
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function navigateTo(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('main > div');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+    function getWeather() {
+  const cityName = document.getElementById('cityInput').value;
+
+  // Simulating random weather details for demonstration purposes
+  const temperature = Math.floor(Math.random() * 40);
+  const weatherConditions = ['Sunny', 'Cloudy', 'Rainy'];
+  const randomWeather = weatherConditions[Math.floor(Math.random() * weatherConditions.length)];
+
+  const weatherDetails = document.getElementById('weatherDetails');
+  weatherDetails.innerHTML = `Weather in ${cityName}: ${randomWeather}, ${temperature}°C`;
+
+  const body = document.body;
+  switch (randomWeather) {
+    case 'Sunny':
+      body.style.backgroundImage = "url('welcomeBG.webp')";
+      body.style.backgroundSize=`100%`;
+      body.style.backgroundRepeat=`no-repeat`;
+      break;
+    case 'Cloudy':
+      body.style.backgroundImage = "url('weather2.jpg')";
+      body.style.backgroundSize=`100%`;
+      body.style.backgroundRepeat=`no-repeat`;
+      break;
+    case 'Rainy':
+      body.style.backgroundImage = "url('bG1.jpeg')";
+      body.style.backgroundSize=`100%`;
+      body.style.backgroundRepeat=`no-repeat`;
+      break;
+  }
+}
+
+function toggleDarkMode() {
+  const body = document.body;
+  body.classList.toggle('dark-mode');
+}
+
+  </script>
+</body>
+</html>

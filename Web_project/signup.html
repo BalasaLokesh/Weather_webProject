@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+  </head>
+  <body>
+    <nav>
+      <img src="/Web_project/weather2.jpg" alt="Logo"><big>Groundhog Weather</big>
+      <a id="h" href="index.html" id="home">Home</a>
+      <a id="a" href="about.html" id="about" target="_blank">About</a>
+      <a id="c" href="contact.html" id="contact" target="_blank">Contact</a>
+      <a id="l" href="login.html" id="login" target="_blank">Login</a>
+      <a id="s" href="signup.html" id="signup" target="_blank">Signup</a>
+  </nav>
+    <div class="body">
+      <div class="container">
+        <div class="bG">
+          <div class="header">
+            <h1>Signup</h1>
+          </div>
+      <form action="" class="form">
+        <div class="field">
+          <label for="name">Enter Name</label>
+          <input type="text" id="name" placeholder="Enter the Name" oninput="getValue()"/>
+          <span class="material-symbols-outlined success1">check_circle</span>
+          <span class="material-symbols-outlined error1">error</span>
+          <small>error message</small>
+        </div>
+        <div class="field">
+          <label for="phone">Enter PhoneNo</label
+          ><input type="text" id="phone" placeholder="Enter the Phone.No" oninput="getValue()" />
+          <span class="material-symbols-outlined success1">check_circle</span>
+          <span class="material-symbols-outlined error1">error</span>
+          <small>error message</small>
+        </div>
+        <div class="field">
+          <label for="email">Enter Email</label>
+          <input type="text" id="email1" placeholder="Enter the Email" oninput="getValue()" />
+          <span class="material-symbols-outlined success1">check_circle</span>
+          <span class="material-symbols-outlined error1">error</span>
+          <small>error message</small>
+        </div>
+        <div class="field">
+          <label for="pass">Enter Password</label
+          ><input type="password" id="pass1" placeholder="Enter the Password" oninput="getValue()" />
+          <span class="material-symbols-outlined success1">check_circle</span>
+          <span class="material-symbols-outlined error1">error</span>
+          <small>error message</small>
+        </div>
+        <div class="field">
+          <label for="cnpass">Confirm Password</label
+          ><input type="password" id="cnpass" placeholder="Enter same Password" oninput="getValue()" />
+          <br>
+          <span class="material-symbols-outlined success1">check_circle</span>
+          <span class="material-symbols-outlined error1">error</span>
+          <small>error message</small>
+        <button onclick="validation()">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="col-12">
+      <h2>Connect</h2>
+    </div>
+    <div class="col-12 social padding">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook mpad"></i></a>
+      <a href="https://twitter.com/login" target="_blank"><i class="fab fa-twitter mpad"></i></a>
+      <a href="https://www.google.com/" target="_blank"><i class="fab fa-google mpad"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+  </div>
+   </div>
+   <!--- Footer -->
+  <footer>
+    <div class="padding container-fluid">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <hr class="light">
+          <h5>Reach Us</h5>
+          <hr class="light">
+          <p>Loki@gmail.com</p>
+          <p>100 street</p>
+          <p>City,State,Country</p>
+        </div>
+        <div class="col-md-6">
+          <hr class="light">
+          <h5>Our hours</h5>
+          <hr class="light">
+          <p>Monday 9am-5pm</p>
+          <p>saturday 10am-4pm</p>
+          <p>sunday closed</p>
+        </div>
+        
+        <div class="col-12">
+          <hr class="light-100">
+          <h5>&copy;groundhog.com</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
